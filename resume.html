@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jagadeeswara K — Résumé</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+/* Edit the text below, then re-export: see README "Updating the résumé PDF" */
+@page{size:A4;margin:0}
+:root{--ink:#0d1320;--mut:#4a5568;--dim:#8a94a6;--line:#e3e8ef;--q:#0fa985;--f:#5865f2;--p:#e08a1e;--bg:#f7f9fc;
+  --sans:'Space Grotesk',Segoe UI,Arial,sans-serif;--mono:'JetBrains Mono',Consolas,monospace}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+body{font-family:var(--sans);color:var(--ink);background:#d9dee7;font-size:9.6pt;line-height:1.42}
+.page{width:210mm;min-height:297mm;margin:0 auto;background:#fff;position:relative;overflow:hidden;padding:14mm 13mm 12mm 17mm}
+.page+.page{margin-top:8mm}
+@media print{body{background:#fff}.page+.page{margin-top:0}.page{height:297mm;break-after:page}.page:last-child{break-after:auto}}
+.rail{position:absolute;left:0;top:0;bottom:0;width:6mm;background:linear-gradient(180deg,var(--p),var(--f) 50%,var(--q))}
+.rail::after{content:"";position:absolute;inset:0;background:repeating-linear-gradient(180deg,transparent 0 9mm,rgba(255,255,255,.35) 9mm 9.4mm)}
+
+/* header */
+.hd{display:block;padding-bottom:4mm;border-bottom:1.5px solid var(--ink)}
+.hd h1{font-size:23pt;line-height:1;letter-spacing:-.03em;font-weight:700}
+.hd h1 span{color:var(--q)}
+.role{font-size:11pt;margin-top:2.2mm;font-weight:500}
+.role b{color:var(--f);font-weight:600}
+.ct{font-family:var(--mono);font-size:7.6pt;color:var(--mut);line-height:1.75}
+.hd .ct{margin-top:2mm}
+.ct a{color:var(--ink);text-decoration:none}
+
+/* stack strip */
+.strip{display:grid;grid-template-columns:repeat(5,1fr);gap:1.5mm;margin:4mm 0 3mm}
+.seg{border-radius:2mm;padding:2mm 2.4mm;background:var(--bg);border:1px solid var(--line);position:relative}
+.seg::before{content:"";position:absolute;left:0;top:0;bottom:0;width:1.2mm;border-radius:2mm 0 0 2mm;background:var(--c)}
+.seg .l{font-family:var(--mono);font-size:6.4pt;color:var(--dim);letter-spacing:.06em}
+.seg .n{font-weight:600;font-size:8.4pt;line-height:1.2}
+.seg .s{font-family:var(--mono);font-size:6.2pt;color:var(--c);font-weight:500}
+.seg.tgt{background:#fff;border-style:dashed}
+
+.summary{font-size:9.6pt;color:var(--mut);margin-bottom:3.5mm}
+.summary strong{color:var(--ink);font-weight:600}
+.summary .obj{font-family:var(--mono);font-size:7.4pt;letter-spacing:.14em;color:var(--q);font-weight:500;margin-right:1.5mm}
+.str b{font-weight:600}
+
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--line);border-radius:2.5mm;overflow:hidden;margin-bottom:5mm}
+.kpi{padding:2.4mm 3mm;border-right:1px solid var(--line)}
+.kpi:last-child{border-right:0}
+.kpi b{display:block;font-size:14pt;letter-spacing:-.02em;line-height:1.1}
+.kpi span{font-size:7.4pt;color:var(--mut);line-height:1.3;display:block}
+
+/* body grid */
+.cols{display:grid;grid-template-columns:1fr 58mm;gap:7mm}
+h2{font-family:var(--mono);font-size:8pt;letter-spacing:.16em;text-transform:uppercase;color:var(--q);font-weight:500;margin:0 0 2.4mm;display:flex;align-items:center;gap:2mm}
+h2::after{content:"";flex:1;height:1px;background:var(--line)}
+.blk{margin-bottom:4.6mm}
+.job{margin-bottom:3.6mm}
+.jh{display:flex;justify-content:space-between;gap:3mm;align-items:baseline}
+.jh h3{font-size:10.4pt;font-weight:600;line-height:1.25}
+.jh .d{font-family:var(--mono);font-size:7.4pt;color:var(--dim);white-space:nowrap}
+.org{font-size:8.8pt;color:var(--mut);margin:.4mm 0 1.4mm}
+.org i{font-style:normal;font-family:var(--mono);font-size:7pt;color:var(--q);border:1px solid #bfe9dd;border-radius:9px;padding:0 1.6mm;margin-left:1mm}
+ul{list-style:none}
+li{position:relative;padding-left:3.6mm;margin-bottom:.9mm;color:#2a3343}
+li::before{content:"";position:absolute;left:.4mm;top:.62em;width:1.6mm;height:1.6mm;border-radius:50%;border:1.2px solid var(--q)}
+li b{font-weight:600;color:var(--ink)}
+.flow{font-family:var(--mono);font-size:6.8pt;color:var(--mut);margin-top:1mm}
+.flow span{color:var(--f)}
+
+.pj{border:1px solid var(--line);border-radius:2.4mm;padding:2.6mm 3mm;margin-bottom:2.4mm;position:relative}
+.pj.pat{border-color:#bfe9dd;background:linear-gradient(90deg,#f1fbf8,#fff 60%)}
+.pj .tg{font-family:var(--mono);font-size:6.6pt;font-weight:500;color:#fff;background:var(--q);border-radius:9px;padding:.3mm 1.8mm;display:inline-block;margin-bottom:1mm}
+.pj .tg.r{background:var(--f)}
+.pj h4{font-size:9.6pt;font-weight:600;line-height:1.25}
+.pj p{color:#2a3343;font-size:8.6pt;margin-top:.8mm}
+.pj .m{font-family:var(--mono);font-size:7.2pt;color:var(--ink);margin-top:1mm}
+.pj .m b{color:var(--q)}
+.pj .br{font-size:7.8pt;color:var(--f);margin-top:1mm;font-style:italic}
+
+/* sidebar */
+.side .blk{margin-bottom:4.4mm}
+.ed{margin-bottom:2.4mm;padding-left:3mm;border-left:2px solid var(--c,var(--line))}
+.ed b{display:block;font-size:9pt;line-height:1.25}
+.ed span{display:block;font-size:7.8pt;color:var(--mut)}
+.ed em{font-style:normal;font-family:var(--mono);font-size:7pt;color:var(--dim)}
+.sk{margin-bottom:2mm}
+.sk .t{font-family:var(--mono);font-size:6.8pt;color:var(--dim);letter-spacing:.06em;text-transform:uppercase;margin-bottom:.8mm}
+.pills{display:flex;flex-wrap:wrap;gap:1mm}
+.pills span{font-size:7.4pt;padding:.4mm 1.7mm;border-radius:1.4mm;background:var(--bg);border:1px solid var(--line)}
+.road .r{display:grid;grid-template-columns:11mm 1fr;gap:2mm;margin-bottom:1.6mm;font-size:8pt}
+.road .r em{font-style:normal;font-family:var(--mono);font-size:6.8pt;font-weight:500;color:var(--c)}
+.road .r span{color:#2a3343}
+.str{font-size:8.2pt;color:#2a3343}
+
+.ft{position:absolute;left:17mm;right:13mm;bottom:7mm;display:flex;justify-content:space-between;font-family:var(--mono);font-size:6.8pt;color:var(--dim)}
+</style>
+</head>
+<body>
+
+<!-- PAGE 1 -->
+<div class="page">
+  <div class="rail"></div>
+  <header class="hd">
+    <div>
+      <h1>Jagadeeswara Chandra Bose <span>K</span></h1>
+      <div class="role">Embedded Firmware &amp; SoC Engineer <b>→ FPGA &amp; Quantum Bit Control</b></div>
+    </div>
+    <div class="ct">
+      <a href="mailto:krg.jcb@gmail.com">krg.jcb@gmail.com</a> · +91 97052 33003 · <a href="https://www.linkedin.com/in/jagadeeswara-k/">linkedin.com/in/jagadeeswara-k</a> · <a href="https://jagadeeswara-k.github.io">jagadeeswara-k.github.io</a> · Bangalore, IN
+    </div>
+  </header>
+
+  <div class="strip">
+    <div class="seg tgt" style="--c:var(--p)"><div class="l">L0 · DEVICE</div><div class="n">Qubits</div><div class="s">TARGET</div></div>
+    <div class="seg" style="--c:var(--q)"><div class="l">L1 · ANALOG</div><div class="n">Power &amp; signal</div><div class="s">PROVEN</div></div>
+    <div class="seg" style="--c:var(--f)"><div class="l">L2 · FPGA</div><div class="n">Control &amp; timing</div><div class="s">BUILDING</div></div>
+    <div class="seg" style="--c:var(--q)"><div class="l">L3 · FIRMWARE</div><div class="n">SoC bring-up</div><div class="s">PROVEN</div></div>
+    <div class="seg" style="--c:var(--q)"><div class="l">L4 · CONTROL</div><div class="n">Estimation &amp; feedback</div><div class="s">PROVEN</div></div>
+  </div>
+
+  <p class="summary"><b class="obj">OBJECTIVE</b> To build the <strong>deterministic control layer</strong> (FPGA timing, clean power and validated firmware) that turns fragile quantum hardware into <strong>dependable applications</strong>. I bring industry experience in <strong>ARM64 SoC firmware bring-up and failure analysis</strong> (Foxconn NPI) and <strong>high-power battery/BMS validation</strong> (Amara Raja R&amp;D), plus <strong>two filed patents</strong> in real-time monitoring and control.</p>
+
+  <div class="kpis">
+    <div class="kpi"><b style="color:var(--q)">2</b><span>Patents filed, Indian Patent Office</span></div>
+    <div class="kpi"><b style="color:var(--f)">ARM64 SoC</b><span>NPI bring-up, Proto → EVT → DVT → PVT</span></div>
+    <div class="kpi"><b style="color:var(--p)">600 V / 400 A</b><span>Battery &amp; power validation</span></div>
+    <div class="kpi"><b>9.7 / 10</b><span>M.Tech CGPA, Embedded &amp; IoT</span></div>
+  </div>
+
+  <div class="cols">
+    <main>
+      <section class="blk">
+        <h2>Experience</h2>
+        <div class="job">
+          <div class="jh"><h3>System Firmware &amp; OSD Failure Analysis Engineer</h3><span class="d">Jul 2025 – Present</span></div>
+          <div class="org">Foxconn Hon Hai Technology India · Factory R&amp;D, NPI</div>
+          <ul>
+            <li><b>ARM64 SoC bring-up</b> (EFI, bootloader, kernel, OS/rootfs integration) across P0/P1/P2 → EVT → CRB → DVT → PVT.</li>
+            <li><b>Primary investigator</b> for kernel panics and system crashes; isolate hardware vs. firmware vs. configuration vs. software root cause.</li>
+            <li>Component-, integration- and system-level validation with <b>Lua/Python automation</b> on test stations and jigs; smoke, regression and ERS command validation.</li>
+            <li>Board-level debug with DSO, logic analyzer, JTAG/UART and USB debug; power-sequencing and boot analysis.</li>
+            <li>Proposed and building a <b>Product Test Log Analyzer</b> to automate failure classification and speed up RCA. Author of SOPs and one-pagers for global teams.</li>
+          </ul>
+          <div class="flow">Failure <span>→</span> Reproduce <span>→</span> Isolate <span>→</span> RCA <span>→</span> Fix <span>→</span> Regression <span>→</span> Production-ready</div>
+        </div>
+        <div class="job">
+          <div class="jh"><h3>R&amp;D Battery, BMS &amp; Power Validation Engineer</h3><span class="d">Aug 2019 – Oct 2020</span></div>
+          <div class="org">Amara Raja Energy &amp; Mobility · R&amp;D Laboratory, QA</div>
+          <ul>
+            <li>Validated Li-ion (3.2–3.8 V/cell, 20–200 Ah) and VRLA (12/14 V, 24–200 Ah) systems with CC-CV characterization.</li>
+            <li>Ran a <b>600 V / 400 A battery cycler</b> for lifecycle, endurance and capacity tests; compliance, environmental and pre-customer qualification.</li>
+            <li>Failure reproduction and RCA from V/I/T logs under ISO 17025 lab practice; technical reports for R&amp;D and manufacturing.</li>
+          </ul>
+        </div>
+      </section>
+
+    </main>
+
+    <aside class="side">
+      <section class="blk">
+        <h2>Education</h2>
+        <div class="ed" style="--c:var(--q)"><b>M.Tech · ECE, Embedded Systems &amp; IoT</b><span>SRM University AP · CGPA 9.7/10</span><em>2023 – 2025 · FPGA, SoC, RTOS, AI/ML</em></div>
+        <div class="ed" style="--c:var(--f)"><b>B.Tech · Electrical &amp; Electronics</b><span>SMGG, JNTUK · 71%</span><em>– 2022 · Power electronics</em></div>
+        <div class="ed" style="--c:var(--p)"><b>Diploma · Electrical &amp; Electronics</b><span>SMGG, SBTET AP · 71%</span><em>2015 – 2018 · APGENCO 500 MW training</em></div>
+        <div class="ed"><b>SSC (10th)</b><span>SRS Municipal High School, AP</span><em>2015</em></div>
+      </section>
+
+      <section class="blk">
+        <h2>Toolkit</h2>
+        <div class="sk"><div class="t">FPGA &amp; SoC</div><div class="pills"><span>Xilinx Zynq</span><span>Vivado</span><span>AXI/AMBA</span><span>ARM64</span><span>Cortex-M</span><span>Tcl</span></div></div>
+        <div class="sk"><div class="t">Firmware &amp; code</div><div class="pills"><span>C/Embedded C</span><span>C++</span><span>Python</span><span>Lua</span><span>EFI/Bootloader</span><span>Linux debug</span><span>RTOS</span></div></div>
+        <div class="sk"><div class="t">Analog &amp; power</div><div class="pills"><span>DC-DC</span><span>GaN/MOSFET/IGBT</span><span>Gate drivers</span><span>LTspice</span><span>Altium</span><span>BMS</span></div></div>
+        <div class="sk"><div class="t">Control &amp; modelling</div><div class="pills"><span>EKF</span><span>PI/SVPWM</span><span>MATLAB/Simulink</span><span>Digital twin</span></div></div>
+      </section>
+
+    </aside>
+  </div>
+  <div class="ft"><span>Jagadeeswara Chandra Bose K · Résumé</span><span>1 / 2</span></div>
+</div>
+
+<!-- PAGE 2 -->
+<div class="page">
+  <div class="rail"></div>
+  <div class="cols">
+    <main>
+      <section class="blk">
+        <h2>Patents</h2>
+        <div class="pj pat">
+          <span class="tg">PATENT FILED · IPO 202641069435</span>
+          <h4>Digital Twin-Based Multi-Bank Battery Monitoring &amp; Fault Prediction</h4>
+          <p>5-layer sensor → edge → AI → cloud → dashboard twin for 150 cells. Hybrid estimators (adaptive EKF, Li-Mamba, ensemble) run against live hardware.</p>
+          <div class="m"><b>0.65%</b> SOC error · <b>96.2%</b> early fault detection · <b>&lt;2 s</b> alerts · 22 health parameters</div>
+          <div class="br">Solves: battery packs that fail without warning, with early fault alerts and accurate SOC for EV and storage systems.</div>
+        </div>
+        <div class="pj pat">
+          <span class="tg">PATENT FILED · IPO 202541009491</span>
+          <h4>System &amp; Method for Managing EV Charging Infrastructure through IoT</h4>
+          <p>5-layer IoT architecture (MQTT, AWS) with a source-priority decision algorithm across 30 swappable batteries.</p>
+          <div class="m"><b>88.6%</b> energy saving · <b>88.5%</b> cost saving · real-time remote control</div>
+          <div class="br">Solves: costly EV charging, by choosing the best energy source in real time and managing battery swapping remotely.</div>
+        </div>
+      </section>
+      <section class="blk">
+        <h2>Research &amp; projects</h2>
+        <div class="pj">
+          <span class="tg r">SEED GRANT · PAPER UNDER REVIEW</span>
+          <h4>IoT-Enabled Hybrid Energy Management System for EV Charging (hardware prototype)</h4>
+          <p>Dual ESP32/PIC controller with 5-mode PCC logic, ACS712/DHT11 sensing; solved edge-layer timing jitter. SRM AP SEED grant SRMAP/URG/SEED/2024-25/038, part of DST-SERB / ANRF research with Amara Raja.</p>
+          <div class="m"><b>&lt;200 ms</b> switching · <b>86.2%</b> renewable utilization · reverse grid export</div>
+          <div class="br">Solves: reliable renewable-powered EV charging with fast solar / battery / grid switching.</div>
+        </div>
+        <div class="pj">
+          <span class="tg r">IIT PALAKKAD · SUMMER RESEARCH FELLOW · 2024</span>
+          <h4>Power Electronic Circuits: Numerical Simulations</h4>
+          <p>Designed and simulated 7 DC-DC topologies (buck, boost, buck-boost, forward, flyback, push-pull, synchronous buck); custom GaN MOSFET and gate-driver libraries in LTspice; 2D/3D Altium PCB for a sub-zero battery pre-heater. Mentor: Dr. N. B. Y. Gorla.</p>
+          <div class="m"><b>7</b> topologies · <b>30%</b> faster design iterations</div>
+          <div class="br">Solves: slow converter design cycles, using formula sheets plus SPICE validation.</div>
+        </div>
+        <div class="pj">
+          <span class="tg r">MODELLING · MATLAB/SIMULINK</span>
+          <h4>Modelling &amp; Simulation of an HEV Electric Powertrain</h4>
+          <p>PMSM with 3-phase 2-level VSI and SVPWM; closed-loop PI speed/current control validated over the IM240 cycle (torque, speed, SOC, switching).</p>
+          <div class="br">Solves: checking a hybrid powertrain before any hardware is built.</div>
+        </div>
+        <div class="pj">
+          <span class="tg r">EMERTXE · 2022–23</span>
+          <h4>Mongoose OS on ESP32 for AWS IoT</h4>
+          <p>OTA firmware updates and secure device management; MQTT telemetry into AWS IoT Core, Analytics and QuickSight pipeline.</p>
+        </div>
+      </section>
+    </main>
+
+    <aside class="side">
+      <section class="blk road">
+        <h2>FPGA → qubit path</h2>
+        <div class="r" style="--c:var(--q)"><em>NOW</em><span>Qiskit, circuit QED, RF/IQ basics, RTL on Zynq</span></div>
+        <div class="r" style="--c:var(--f)"><em>NEXT</em><span>Zynq pulse sequencer, FPGA IQ demod, low-noise bias supply</span></div>
+        <div class="r" style="--c:var(--p)"><em>LATER</em><span>Scalable qubit control electronics &amp; feedback</span></div>
+      </section>
+      <section class="blk">
+        <h2>Lab &amp; interfaces</h2>
+        <div class="sk"><div class="t">Lab</div><div class="pills"><span>DSO</span><span>Logic analyzer</span><span>JTAG/UART</span><span>Battery cyclers</span><span>ISO 17025</span></div></div>
+        <div class="sk"><div class="t">Interfaces</div><div class="pills"><span>SPI</span><span>I²C</span><span>UART</span><span>CAN</span><span>PCIe</span><span>USB</span><span>MQTT</span></div></div>
+      </section>
+      <section class="blk">
+        <h2>Certifications</h2>
+        <div class="ed" style="--c:var(--f)"><b>Embedded Systems &amp; IoT</b><span>Emertxe Information Technologies, Bangalore</span><em>2022 – 2023 · ARM, RTOS, MQTT/CoAP, AWS</em></div>
+        <div class="ed" style="--c:var(--q)"><b>AI / ML Program</b><span>IIT Patna (Masai School)</span><em>Ongoing · ML, LLMs, RAG, Agentic AI</em></div>
+      </section>
+
+      <section class="blk">
+        <h2>A2I · Academic to Industry</h2>
+        <p class="str">I host an <b>Engineering School platform</b> that helps academic students move into industry through hands-on projects, engineering practice and mentoring from people in the field.</p>
+        <div class="pills" style="margin-top:2mm"><span>Design Thinking</span><span>Project Management</span><span>Product Development</span><span>Prototyping</span><span>Cross-functional collaboration</span><span>Technical documentation</span><span>7 QC tools</span></div>
+      </section>
+
+      <section class="blk">
+        <h2>Links</h2>
+        <div class="ct" style="text-align:left">
+          <a href="https://jagadeeswara-k.github.io">Portfolio · jagadeeswara-k.github.io</a><br>
+          <a href="https://github.com/Jagadeeswara-k">GitHub · Jagadeeswara-k</a><br>
+          <a href="https://medium.com/@krg.jcb">Medium · @krg.jcb</a><br>
+          <a href="https://www.kaggle.com/jagadeeswarak">Kaggle · jagadeeswarak</a>
+        </div>
+      </section>
+
+    </aside>
+  </div>
+  <div class="ft"><span>I declare that the information above is accurate to the best of my knowledge.</span><span>2 / 2</span></div>
+</div>
+
+</body>
+</html>
